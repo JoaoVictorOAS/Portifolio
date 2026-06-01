@@ -1,3 +1,17 @@
+.projects-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.projects-group {
+    margin-bottom: 2rem;
+}
+
+.projects-group:last-child {
+    margin-bottom: 0;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -451,14 +465,13 @@ html {
 }
 
 .project-category {
-    grid-column: 1 / -1;
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-bottom: 1.5rem;
 }
 
-.project-category:first-child {
+.projects-group:first-child .project-category {
     margin-top: 0;
 }
 
