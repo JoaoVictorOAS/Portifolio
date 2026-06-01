@@ -405,12 +405,86 @@ html {
     color: var(--text-secondary);
 }
 
+.btn-primary {
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
+    border: 2px solid var(--text-primary);
+}
+
+.btn-primary:hover {
+    background-color: rgba(13, 13, 13, 0.8);
+    border-color: rgba(13, 13, 13, 0.8);
+    color: var(--bg-primary);
+}
+
+.project-card--featured {
+    border-color: rgba(13, 13, 13, 0.35);
+    background-color: var(--bg-primary);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.project-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 9999px;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.badge-pro {
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
+}
+
+.badge-startup {
+    background-color: #1c1c3a;
+    color: #e8e8ff;
+}
+
+.badge-academic {
+    background-color: transparent;
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+}
+
+.project-category {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.project-category:first-child {
+    margin-top: 0;
+}
+
+.project-category::before,
+.project-category::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: var(--border-color);
+}
+
+.category-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .skills-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
